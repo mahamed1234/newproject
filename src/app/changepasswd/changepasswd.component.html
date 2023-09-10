@@ -1,0 +1,23 @@
+
+<div class="p-fluid change-password-container">
+    <h2>Change Password</h2>
+    <p-toast></p-toast>
+  
+    <form [formGroup]="form" (ngSubmit)="changePassword()">
+      <div class="p-field">
+        <label for="oldPassword">Old Password</label>
+        <p-password formControlName="oldPassword"></p-password>
+      </div>
+      <div class="p-field">
+        <label for="newPassword">New Password</label>
+        <p-password formControlName="newPassword"></p-password>
+      </div>
+      <div class="p-field">
+        <label for="confirmPassword">Confirm Password</label>
+        <p-password formControlName="confirmPassword"></p-password>
+      </div>
+      
+      <button pButton type="submit" label="Change Password" [disabled]="form.invalid"></button>
+    </form>
+  </div>
+  

@@ -1,0 +1,26 @@
+<div class="card mb-5 d-flex justify-content-center">   
+     <h2>Update Profile</h2>
+    <form [formGroup]="updateForm" >
+      <div class="p-fluid">
+        <div class="p-field">
+          <b><label for="firstName">First Name</label></b>
+          <input type="text" id="firstName" formControlName="firstName" class="p-inputtext">
+        </div>
+        <div class="p-field">
+          <b><label for="lastName">Last Name</label></b>
+          <input type="text" id="lastName" formControlName="lastName" class="p-inputtext">
+        </div>
+        <div class="p-field">
+          <b><label for="email">Email</label></b>
+          <input type="email" id="email" formControlName="email" class="p-inputtext">
+        </div>
+        <div class="p-field">
+         <b><label for="avatar">Upload Avatar</label></b>
+          <p-fileUpload name="avatar" url="/your-upload-url" mode="basic"></p-fileUpload>
+        </div>
+            <button type="submit" class="p-button p-button-primary" style="width: 10%;">Save</button>
+
+      </div>
+    </form>
+  </div>
+     
